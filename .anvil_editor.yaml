@@ -2,8 +2,10 @@ unique_ids:
   forms:
     Form1: '1710623452494214865336106.10193'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1710627655612582388043810.5667'
   assets:
     dashboard.html: 6F7NIEVQAUHAFSST372CFDWOL4CKQ3Z7
     single-column.html: BEXW744OFMU4HLRNB7I6U543URMMTOUI
     theme.css: S72VK7QUUSEP23K6465TOHNABJXY6TLT
+    Снимок22.JPG: '1710626840386395088471435.68396'
