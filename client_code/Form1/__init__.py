@@ -2,6 +2,13 @@ from anvil import open_form
 from ._anvil_designer import Form1Template 
 import anvil
 
+
+class Form1(Form1Template):
+
+    def __init__(self, **properties):
+        # Здесь инициализируются компоненты формы
+        self.init_components(**properties)
+      
 class Form1(Form1Template):
     def __init__(self, **properties):
         self.init_components(**properties)
@@ -37,10 +44,16 @@ class Form1(Form1Template):
 
   
   def button_9_click(self, **event_args):
-        # This method is supposed to open Form2, ensure Form2 is defined and imported correctly
-        open_form('Form2')
-
-
+        """Этот метод вызывается при нажатии на кнопку"""
+        # Очищаем основную панель и добавляем Form2
+        self.content_panel.clear()
+        self.content_panel.add_component(Form2())
+        
+        # Можно изменить фон кнопки, чтобы показать, что Form2 выбрана
+        self.button_9.background = app.theme_colors['Primary Container']
+        # Если есть другие кнопки, устанавливаем их фон в "прозрачный"
+        # Например:
+        # self.button_5.background = "transparent"
 
 from ._anvil_designer import Form1Template
 from anvil import *
