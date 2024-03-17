@@ -2,12 +2,14 @@ from anvil import open_form
 from ._anvil_designer import Form1Template 
 import anvil
 
-
 class Form1(Form1Template):
-
-    def __init__(self, **properties):
-        # Здесь инициализируются компоненты формы
-        self.init_components(**properties)
+ def button_9_click(self, **event_args):
+   """This method is called when the button is clicked"""
+   #Clear the content panel and add the Form2 Form
+   self.content_panel.clear()
+   self.content_panel.add_component(Form2())
+   self.sales_page_link.background = app.theme_colors['Primary Container']
+   self.reports_page_link.background = "transparent"
       
 class Form1(Form1Template):
     def __init__(self, **properties):
