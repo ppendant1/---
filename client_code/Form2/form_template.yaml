@@ -4,4 +4,9 @@ components:
   properties: {text: sdcscfed}
   type: Label
   layout_properties: {grid_position: 'QURIPC,WXCZUK'}
+- name: button_1
+  properties: {text: button_1}
+  type: Button
+  layout_properties: {grid_position: 'GAWZBC,BVTHQK'}
+  event_bindings: {click: button_1_click}
 is_package: true

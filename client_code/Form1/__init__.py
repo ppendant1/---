@@ -5,6 +5,14 @@ import anvil
 class Form1(Form1Template):
     def __init__(self, **properties):
         self.init_components(**properties)
+
+    def button_11_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form('Form2')
+
+    def radio_button_1_clicked(self, **event_args):
+      """This method is called when this radio button is selected"""
+      pass
       
 import anvil.server
 

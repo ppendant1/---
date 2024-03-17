@@ -23,6 +23,11 @@ components:
       properties: {source: _/theme/Снимок22.JPG}
       type: Image
       layout_properties: {grid_position: 'EBGRJS,RNSHFD'}
+  - name: button_11
+    properties: {text: button_11}
+    type: Button
+    layout_properties: {grid_position: 'OWDYZW,WYZQFU'}
+    event_bindings: {click: button_11_click}
   - name: label_13
     properties: {text: "  \xab\u0426\u0435\u043d\u0442\u0440 \u044d\u043a\u043e\u043d\
         \u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0432\u0437\u0430\
@@ -429,7 +434,7 @@ components:
   event_bindings: {click: button_9_click}
 - name: button_8
   properties: {text: Администрирование Ресурсов, background: 'theme:Sidebar Background',
-    foreground: 'theme:Background'}
+    foreground: 'theme:Background', bold: true}
   type: Button
   layout_properties: {slot: sidebar}
 - name: button_7
