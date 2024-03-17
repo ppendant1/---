@@ -426,6 +426,7 @@ components:
   properties: {text: Обработка Данных, background: 'theme:Sidebar Background', foreground: 'theme:Background'}
   type: Button
   layout_properties: {slot: sidebar}
+  event_bindings: {click: button_9_click}
 - name: button_8
   properties: {text: Администрирование Ресурсов, background: 'theme:Sidebar Background',
     foreground: 'theme:Background'}
@@ -441,6 +442,7 @@ components:
     foreground: 'theme:Background'}
   type: Button
   layout_properties: {slot: sidebar}
+  event_bindings: {click: button_5_click}
 - name: button_4
   properties: {text: Безопасность и Контроль Доступа, background: 'theme:Sidebar Background',
     foreground: 'theme:Background'}

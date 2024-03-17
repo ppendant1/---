@@ -2,8 +2,11 @@ allow_embedding: false
 package_name: Classic_1
 name: Classic 1
 startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
+runtime_options:
+  version: 2
+  client_version: '3'
+  server_version: python3-sandbox
+  server_spec: {base: python310-minimal}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
